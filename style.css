@@ -1,0 +1,104 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #000428, #004e92); /* Dark gradient */
+    background-size: cover; /* Ensure background fills the page */
+    color: #ffffff; /* White text for visibility */
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Container for Main Content */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid #ffffff; /* White border for contrast */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Subtle white glow */
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #FFD700; /* Gold for a festive feel */
+}
+
+/* Instruction Text */
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #f0f8ff; /* Light text for visibility */
+}
+
+/* Input Field Styling */
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent */
+    color: #000;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    background-color: #FFD700; /* Gold button */
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Hidden Elements */
+.hidden {
+    display: none;
+}
+
+/* Image Container */
+#imageContainer {
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4); /* White glow around image */
+}
+
+/* Snowfall Effect */
+#snowfall {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Keeps the snow behind all content */
+    pointer-events: none; /* Prevents interaction with snow */
+}
+
+/* Add Stars to Background */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Add stars texture */
+    opacity: 0.8;
+    z-index: -2; /* Stars behind snowfall */
+}
